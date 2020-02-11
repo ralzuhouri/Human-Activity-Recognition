@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D1447F1204C364100990E62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1447F0204C364100990E62 /* AppDelegate.swift */; };
+		2D1447F8204C364300990E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1447F7204C364300990E62 /* Assets.xcassets */; };
+		2D1447FB204C364300990E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1447F9204C364300990E62 /* LaunchScreen.storyboard */; };
+		2D144800204C364300990E62 /* Human Activity Recognition WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2D1447FF204C364300990E62 /* Human Activity Recognition WatchKit App.app */; };
+		2D144806204C364300990E62 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D144804204C364300990E62 /* Interface.storyboard */; };
+		2D144808204C364400990E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D144807204C364400990E62 /* Assets.xcassets */; };
+		2D14480F204C364400990E62 /* Human Activity Recognition WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2D14480E204C364400990E62 /* Human Activity Recognition WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2D144814204C364400990E62 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144813204C364400990E62 /* InterfaceController.swift */; };
+		2D144816204C364400990E62 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144815204C364400990E62 /* ExtensionDelegate.swift */; };
+		2D144818204C364400990E62 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144817204C364400990E62 /* ComplicationController.swift */; };
+		2D14481A204C364500990E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D144819204C364500990E62 /* Assets.xcassets */; };
+		2D14482A204C378000990E62 /* TestingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144829204C378000990E62 /* TestingController.swift */; };
+		2D14482C204C378D00990E62 /* TrainingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14482B204C378C00990E62 /* TrainingController.swift */; };
+		2D14482E204C379400990E62 /* WorkoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14482D204C379400990E62 /* WorkoutData.swift */; };
+		2D144830204C379A00990E62 /* WorkoutInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14482F204C379A00990E62 /* WorkoutInfo.swift */; };
+		2D144832204C37A600990E62 /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144831204C37A600990E62 /* ActivityController.swift */; };
+		2D144834204C37AD00990E62 /* ActivityRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144833204C37AD00990E62 /* ActivityRowController.swift */; };
+		2D144837204C3C1300990E62 /* Activities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D144836204C3C1300990E62 /* Activities.plist */; };
+		2D144838204C3C1300990E62 /* Activities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D144836204C3C1300990E62 /* Activities.plist */; };
+		2D14483B204C3C2800990E62 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144839204C3C2800990E62 /* Preferences.swift */; };
+		2D14483D204C3C3E00990E62 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14483C204C3C3E00990E62 /* Math.swift */; };
+		2D144840204C3C5100990E62 /* SensorsRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14483E204C3C5100990E62 /* SensorsRecorder.swift */; };
+		2D144844204C3C6500990E62 /* CoreLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144841204C3C6500990E62 /* CoreLocationService.swift */; };
+		2D144845204C3C6500990E62 /* CoreLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144841204C3C6500990E62 /* CoreLocationService.swift */; };
+		2D144846204C3C6500990E62 /* CoreMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144842204C3C6500990E62 /* CoreMotionService.swift */; };
+		2D144847204C3C6500990E62 /* CoreMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144842204C3C6500990E62 /* CoreMotionService.swift */; };
+		2D144848204C3C6500990E62 /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144843204C3C6500990E62 /* HealthKitService.swift */; };
+		2D144849204C3C6500990E62 /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144843204C3C6500990E62 /* HealthKitService.swift */; };
+		2D14484B204C3C7500990E62 /* ICloudHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14484A204C3C7400990E62 /* ICloudHelper.swift */; };
+		2D14484E204C3C8800990E62 /* MessageQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14484C204C3C8800990E62 /* MessageQueue.swift */; };
+		2D14484F204C3C8800990E62 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14484D204C3C8800990E62 /* Queue.swift */; };
+		2D144852204C3CAE00990E62 /* HistorySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144850204C3CAD00990E62 /* HistorySet.swift */; };
+		2D144853204C3CAE00990E62 /* DecisionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144851204C3CAD00990E62 /* DecisionTree.swift */; };
+		2D144855204C3CC100990E62 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144854204C3CC100990E62 /* Logger.swift */; };
+		2D144856204C3CC100990E62 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144854204C3CC100990E62 /* Logger.swift */; };
+		2D144858204C3CD200990E62 /* Activities.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D144857204C3CD100990E62 /* Activities.txt */; };
+		2D144860204C3D0D00990E62 /* FeatureGroup+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14485A204C3D0D00990E62 /* FeatureGroup+CoreDataProperties.swift */; };
+		2D144861204C3D0D00990E62 /* FeatureSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14485B204C3D0D00990E62 /* FeatureSet+CoreDataProperties.swift */; };
+		2D144862204C3D0D00990E62 /* FeatureSet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14485C204C3D0D00990E62 /* FeatureSet+CoreDataClass.swift */; };
+		2D144863204C3D0D00990E62 /* FeatureGroup+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14485D204C3D0D00990E62 /* FeatureGroup+CoreDataClass.swift */; };
+		2D144864204C3D0D00990E62 /* Training+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14485E204C3D0D00990E62 /* Training+CoreDataClass.swift */; };
+		2D144865204C3D0D00990E62 /* Training+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14485F204C3D0D00990E62 /* Training+CoreDataProperties.swift */; };
+		2D144868204C3D1A00990E62 /* Instances.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D144866204C3D1A00990E62 /* Instances.xcdatamodeld */; };
+		2D14486A204C3D3900990E62 /* TrainingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144869204C3D3800990E62 /* TrainingsController.swift */; };
+		2D144874204C498600990E62 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14486B204C498500990E62 /* SettingsViewController.swift */; };
+		2D144875204C498600990E62 /* InstancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14486C204C498500990E62 /* InstancesViewController.swift */; };
+		2D144876204C498600990E62 /* BodyMeasurementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14486D204C498600990E62 /* BodyMeasurementsViewController.swift */; };
+		2D144877204C498600990E62 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14486E204C498600990E62 /* GroupsViewController.swift */; };
+		2D144878204C498600990E62 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14486F204C498600990E62 /* TrainingViewController.swift */; };
+		2D144879204C498600990E62 /* PairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144870204C498600990E62 /* PairingViewController.swift */; };
+		2D14487A204C498600990E62 /* ExportDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144871204C498600990E62 /* ExportDataViewController.swift */; };
+		2D14487B204C498600990E62 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144872204C498600990E62 /* GroupViewController.swift */; };
+		2D14487C204C498600990E62 /* TrainingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144873204C498600990E62 /* TrainingsViewController.swift */; };
+		2D144883204C4A1800990E62 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D144882204C4A1800990E62 /* HealthKit.framework */; };
+		2D144885204C4A3700990E62 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D144884204C4A3700990E62 /* HealthKit.framework */; };
+		2D144893204C4BAE00990E62 /* Exponential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144887204C4BAD00990E62 /* Exponential.swift */; };
+		2D144894204C4BAE00990E62 /* Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144888204C4BAD00990E62 /* Arithmetic.swift */; };
+		2D144895204C4BAE00990E62 /* ContinuousCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144889204C4BAD00990E62 /* ContinuousCollection.swift */; };
+		2D144896204C4BAE00990E62 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14488A204C4BAD00990E62 /* FFT.swift */; };
+		2D144897204C4BAE00990E62 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14488B204C4BAD00990E62 /* Matrix.swift */; };
+		2D144898204C4BAE00990E62 /* Hyperbolic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14488C204C4BAE00990E62 /* Hyperbolic.swift */; };
+		2D144899204C4BAE00990E62 /* Convolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14488E204C4BAE00990E62 /* Convolution.swift */; };
+		2D14489A204C4BAE00990E62 /* Pointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14488F204C4BAE00990E62 /* Pointers.swift */; };
+		2D14489B204C4BAE00990E62 /* Trigonometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144890204C4BAE00990E62 /* Trigonometric.swift */; };
+		2D14489C204C4BAE00990E62 /* Auxiliary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144891204C4BAE00990E62 /* Auxiliary.swift */; };
+		2D14489D204C4BAE00990E62 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144892204C4BAE00990E62 /* Power.swift */; };
+		2D14489F204C4C2D00990E62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D14489E204C4C2D00990E62 /* Main.storyboard */; };
+		2D1448A5204C509B00990E62 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1448A4204C509B00990E62 /* Accelerate.framework */; };
+		2D1448A7204C50A700990E62 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1448A6204C50A700990E62 /* MessageUI.framework */; };
+		2D7A3654204EFDBA007C7F91 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144839204C3C2800990E62 /* Preferences.swift */; };
+		2D7A3656204F007F007C7F91 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2D7A3655204F007F007C7F91 /* Settings.bundle */; };
+		2D94A72A20BEE3FE00129BB9 /* SensorsRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14483E204C3C5100990E62 /* SensorsRecorder.swift */; };
+		2DFC1D9720DD1646007AC8CD /* BatteryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC1D9620DD1646007AC8CD /* BatteryTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D144801204C364300990E62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D1447E5204C364100990E62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D1447FE204C364300990E62;
+			remoteInfo = "Human Activity Recognition WatchKit App";
+		};
+		2D144810204C364400990E62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D1447E5204C364100990E62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D14480D204C364400990E62;
+			remoteInfo = "Human Activity Recognition WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D144821204C364500990E62 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2D14480F204C364400990E62 /* Human Activity Recognition WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D144825204C364500990E62 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2D144800204C364300990E62 /* Human Activity Recognition WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2D1447ED204C364100990E62 /* Human Activity Recognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Human Activity Recognition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1447F0204C364100990E62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D1447F7204C364300990E62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D1447FA204C364300990E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D1447FC204C364300990E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D1447FF204C364300990E62 /* Human Activity Recognition WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Human Activity Recognition WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D144805204C364300990E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2D144807204C364400990E62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D144809204C364400990E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D14480E204C364400990E62 /* Human Activity Recognition WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Human Activity Recognition WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D144813204C364400990E62 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2D144815204C364400990E62 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2D144817204C364400990E62 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2D144819204C364500990E62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D14481B204C364500990E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D144829204C378000990E62 /* TestingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingController.swift; sourceTree = "<group>"; };
+		2D14482B204C378C00990E62 /* TrainingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingController.swift; sourceTree = "<group>"; };
+		2D14482D204C379400990E62 /* WorkoutData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutData.swift; sourceTree = "<group>"; };
+		2D14482F204C379A00990E62 /* WorkoutInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutInfo.swift; sourceTree = "<group>"; };
+		2D144831204C37A600990E62 /* ActivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
+		2D144833204C37AD00990E62 /* ActivityRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityRowController.swift; sourceTree = "<group>"; };
+		2D144836204C3C1300990E62 /* Activities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Activities.plist; sourceTree = "<group>"; };
+		2D144839204C3C2800990E62 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		2D14483C204C3C3E00990E62 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		2D14483E204C3C5100990E62 /* SensorsRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsRecorder.swift; sourceTree = "<group>"; };
+		2D144841204C3C6500990E62 /* CoreLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationService.swift; sourceTree = "<group>"; };
+		2D144842204C3C6500990E62 /* CoreMotionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionService.swift; sourceTree = "<group>"; };
+		2D144843204C3C6500990E62 /* HealthKitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		2D14484A204C3C7400990E62 /* ICloudHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICloudHelper.swift; sourceTree = "<group>"; };
+		2D14484C204C3C8800990E62 /* MessageQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageQueue.swift; sourceTree = "<group>"; };
+		2D14484D204C3C8800990E62 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		2D144850204C3CAD00990E62 /* HistorySet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorySet.swift; sourceTree = "<group>"; };
+		2D144851204C3CAD00990E62 /* DecisionTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecisionTree.swift; sourceTree = "<group>"; };
+		2D144854204C3CC100990E62 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		2D144857204C3CD100990E62 /* Activities.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Activities.txt; sourceTree = "<group>"; };
+		2D14485A204C3D0D00990E62 /* FeatureGroup+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeatureGroup+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2D14485B204C3D0D00990E62 /* FeatureSet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeatureSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2D14485C204C3D0D00990E62 /* FeatureSet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeatureSet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2D14485D204C3D0D00990E62 /* FeatureGroup+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeatureGroup+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2D14485E204C3D0D00990E62 /* Training+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Training+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2D14485F204C3D0D00990E62 /* Training+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Training+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2D144867204C3D1A00990E62 /* Instances.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instances.xcdatamodel; sourceTree = "<group>"; };
+		2D144869204C3D3800990E62 /* TrainingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingsController.swift; sourceTree = "<group>"; };
+		2D14486B204C498500990E62 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2D14486C204C498500990E62 /* InstancesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstancesViewController.swift; sourceTree = "<group>"; };
+		2D14486D204C498600990E62 /* BodyMeasurementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyMeasurementsViewController.swift; sourceTree = "<group>"; };
+		2D14486E204C498600990E62 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		2D14486F204C498600990E62 /* TrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		2D144870204C498600990E62 /* PairingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingViewController.swift; sourceTree = "<group>"; };
+		2D144871204C498600990E62 /* ExportDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportDataViewController.swift; sourceTree = "<group>"; };
+		2D144872204C498600990E62 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		2D144873204C498600990E62 /* TrainingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingsViewController.swift; sourceTree = "<group>"; };
+		2D14487D204C49B300990E62 /* Human Activity Recognition WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Human Activity Recognition WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		2D144881204C4A0400990E62 /* Human Activity Recognition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Human Activity Recognition.entitlements"; sourceTree = "<group>"; };
+		2D144882204C4A1800990E62 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		2D144884204C4A3700990E62 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		2D144887204C4BAD00990E62 /* Exponential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exponential.swift; sourceTree = "<group>"; };
+		2D144888204C4BAD00990E62 /* Arithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arithmetic.swift; sourceTree = "<group>"; };
+		2D144889204C4BAD00990E62 /* ContinuousCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinuousCollection.swift; sourceTree = "<group>"; };
+		2D14488A204C4BAD00990E62 /* FFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
+		2D14488B204C4BAD00990E62 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		2D14488C204C4BAE00990E62 /* Hyperbolic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hyperbolic.swift; sourceTree = "<group>"; };
+		2D14488D204C4BAE00990E62 /* Surge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Surge.h; sourceTree = "<group>"; };
+		2D14488E204C4BAE00990E62 /* Convolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convolution.swift; sourceTree = "<group>"; };
+		2D14488F204C4BAE00990E62 /* Pointers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pointers.swift; sourceTree = "<group>"; };
+		2D144890204C4BAE00990E62 /* Trigonometric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trigonometric.swift; sourceTree = "<group>"; };
+		2D144891204C4BAE00990E62 /* Auxiliary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auxiliary.swift; sourceTree = "<group>"; };
+		2D144892204C4BAE00990E62 /* Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
+		2D14489E204C4C2D00990E62 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2D1448A4204C509B00990E62 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		2D1448A6204C50A700990E62 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2D7A3655204F007F007C7F91 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2DFC1D9620DD1646007AC8CD /* BatteryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D1447EA204C364100990E62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1448A7204C50A700990E62 /* MessageUI.framework in Frameworks */,
+				2D144883204C4A1800990E62 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D14480B204C364400990E62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1448A5204C509B00990E62 /* Accelerate.framework in Frameworks */,
+				2D144885204C4A3700990E62 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D1447E4204C364100990E62 = {
+			isa = PBXGroup;
+			children = (
+				2D144886204C4B9D00990E62 /* Surge */,
+				2D144835204C3BF500990E62 /* Utilities */,
+				2D144859204C3CEE00990E62 /* Core Data */,
+				2D1447EF204C364100990E62 /* Human Activity Recognition */,
+				2D144803204C364300990E62 /* Human Activity Recognition WatchKit App */,
+				2D144812204C364400990E62 /* Human Activity Recognition WatchKit Extension */,
+				2D1447EE204C364100990E62 /* Products */,
+				2D14487E204C49CE00990E62 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D1447EE204C364100990E62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D1447ED204C364100990E62 /* Human Activity Recognition.app */,
+				2D1447FF204C364300990E62 /* Human Activity Recognition WatchKit App.app */,
+				2D14480E204C364400990E62 /* Human Activity Recognition WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D1447EF204C364100990E62 /* Human Activity Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				2D144881204C4A0400990E62 /* Human Activity Recognition.entitlements */,
+				2D1447F0204C364100990E62 /* AppDelegate.swift */,
+				2D14486D204C498600990E62 /* BodyMeasurementsViewController.swift */,
+				2D144871204C498600990E62 /* ExportDataViewController.swift */,
+				2D14486E204C498600990E62 /* GroupsViewController.swift */,
+				2D144872204C498600990E62 /* GroupViewController.swift */,
+				2D14486C204C498500990E62 /* InstancesViewController.swift */,
+				2D144870204C498600990E62 /* PairingViewController.swift */,
+				2D14486B204C498500990E62 /* SettingsViewController.swift */,
+				2D144873204C498600990E62 /* TrainingsViewController.swift */,
+				2D14486F204C498600990E62 /* TrainingViewController.swift */,
+				2D14489E204C4C2D00990E62 /* Main.storyboard */,
+				2D1447F7204C364300990E62 /* Assets.xcassets */,
+				2D1447F9204C364300990E62 /* LaunchScreen.storyboard */,
+				2D1447FC204C364300990E62 /* Info.plist */,
+				2D7A3655204F007F007C7F91 /* Settings.bundle */,
+			);
+			path = "Human Activity Recognition";
+			sourceTree = "<group>";
+		};
+		2D144803204C364300990E62 /* Human Activity Recognition WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2D144804204C364300990E62 /* Interface.storyboard */,
+				2D144807204C364400990E62 /* Assets.xcassets */,
+				2D144809204C364400990E62 /* Info.plist */,
+			);
+			path = "Human Activity Recognition WatchKit App";
+			sourceTree = "<group>";
+		};
+		2D144812204C364400990E62 /* Human Activity Recognition WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2D14487D204C49B300990E62 /* Human Activity Recognition WatchKit Extension.entitlements */,
+				2D144817204C364400990E62 /* ComplicationController.swift */,
+				2D144815204C364400990E62 /* ExtensionDelegate.swift */,
+				2D144813204C364400990E62 /* InterfaceController.swift */,
+				2D3145F7204D72C90047249A /* Training */,
+				2D3145F8204D72E40047249A /* Testing */,
+				2D144819204C364500990E62 /* Assets.xcassets */,
+				2D14481B204C364500990E62 /* Info.plist */,
+			);
+			path = "Human Activity Recognition WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2D144835204C3BF500990E62 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2D144836204C3C1300990E62 /* Activities.plist */,
+				2D144839204C3C2800990E62 /* Preferences.swift */,
+				2D14483C204C3C3E00990E62 /* Math.swift */,
+				2D14483E204C3C5100990E62 /* SensorsRecorder.swift */,
+				2D144841204C3C6500990E62 /* CoreLocationService.swift */,
+				2D144842204C3C6500990E62 /* CoreMotionService.swift */,
+				2D144843204C3C6500990E62 /* HealthKitService.swift */,
+				2D14484A204C3C7400990E62 /* ICloudHelper.swift */,
+				2D14484C204C3C8800990E62 /* MessageQueue.swift */,
+				2D14484D204C3C8800990E62 /* Queue.swift */,
+				2D144854204C3CC100990E62 /* Logger.swift */,
+				2D144851204C3CAD00990E62 /* DecisionTree.swift */,
+				2D144850204C3CAD00990E62 /* HistorySet.swift */,
+				2DFC1D9620DD1646007AC8CD /* BatteryTest.swift */,
+				2D144857204C3CD100990E62 /* Activities.txt */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2D144859204C3CEE00990E62 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				2D14485D204C3D0D00990E62 /* FeatureGroup+CoreDataClass.swift */,
+				2D14485A204C3D0D00990E62 /* FeatureGroup+CoreDataProperties.swift */,
+				2D14485C204C3D0D00990E62 /* FeatureSet+CoreDataClass.swift */,
+				2D14485B204C3D0D00990E62 /* FeatureSet+CoreDataProperties.swift */,
+				2D14485E204C3D0D00990E62 /* Training+CoreDataClass.swift */,
+				2D14485F204C3D0D00990E62 /* Training+CoreDataProperties.swift */,
+				2D144866204C3D1A00990E62 /* Instances.xcdatamodeld */,
+				2D144869204C3D3800990E62 /* TrainingsController.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		2D14487E204C49CE00990E62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D1448A6204C50A700990E62 /* MessageUI.framework */,
+				2D1448A4204C509B00990E62 /* Accelerate.framework */,
+				2D144884204C4A3700990E62 /* HealthKit.framework */,
+				2D144882204C4A1800990E62 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D144886204C4B9D00990E62 /* Surge */ = {
+			isa = PBXGroup;
+			children = (
+				2D144888204C4BAD00990E62 /* Arithmetic.swift */,
+				2D144891204C4BAE00990E62 /* Auxiliary.swift */,
+				2D144889204C4BAD00990E62 /* ContinuousCollection.swift */,
+				2D14488E204C4BAE00990E62 /* Convolution.swift */,
+				2D144887204C4BAD00990E62 /* Exponential.swift */,
+				2D14488A204C4BAD00990E62 /* FFT.swift */,
+				2D14488C204C4BAE00990E62 /* Hyperbolic.swift */,
+				2D14488B204C4BAD00990E62 /* Matrix.swift */,
+				2D14488F204C4BAE00990E62 /* Pointers.swift */,
+				2D144892204C4BAE00990E62 /* Power.swift */,
+				2D14488D204C4BAE00990E62 /* Surge.h */,
+				2D144890204C4BAE00990E62 /* Trigonometric.swift */,
+			);
+			path = Surge;
+			sourceTree = "<group>";
+		};
+		2D3145F7204D72C90047249A /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				2D14482B204C378C00990E62 /* TrainingController.swift */,
+				2D144831204C37A600990E62 /* ActivityController.swift */,
+				2D144833204C37AD00990E62 /* ActivityRowController.swift */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		2D3145F8204D72E40047249A /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				2D144829204C378000990E62 /* TestingController.swift */,
+				2D14482D204C379400990E62 /* WorkoutData.swift */,
+				2D14482F204C379A00990E62 /* WorkoutInfo.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D1447EC204C364100990E62 /* Human Activity Recognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D144826204C364500990E62 /* Build configuration list for PBXNativeTarget "Human Activity Recognition" */;
+			buildPhases = (
+				2D1447E9204C364100990E62 /* Sources */,
+				2D1447EA204C364100990E62 /* Frameworks */,
+				2D1447EB204C364100990E62 /* Resources */,
+				2D144825204C364500990E62 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D144802204C364300990E62 /* PBXTargetDependency */,
+			);
+			name = "Human Activity Recognition";
+			productName = "Human Activity Recognition";
+			productReference = 2D1447ED204C364100990E62 /* Human Activity Recognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D1447FE204C364300990E62 /* Human Activity Recognition WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D144822204C364500990E62 /* Build configuration list for PBXNativeTarget "Human Activity Recognition WatchKit App" */;
+			buildPhases = (
+				2D1447FD204C364300990E62 /* Resources */,
+				2D144821204C364500990E62 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D144811204C364400990E62 /* PBXTargetDependency */,
+			);
+			name = "Human Activity Recognition WatchKit App";
+			productName = "Human Activity Recognition WatchKit App";
+			productReference = 2D1447FF204C364300990E62 /* Human Activity Recognition WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2D14480D204C364400990E62 /* Human Activity Recognition WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D14481E204C364500990E62 /* Build configuration list for PBXNativeTarget "Human Activity Recognition WatchKit Extension" */;
+			buildPhases = (
+				2D14480A204C364400990E62 /* Sources */,
+				2D14480B204C364400990E62 /* Frameworks */,
+				2D14480C204C364400990E62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Human Activity Recognition WatchKit Extension";
+			productName = "Human Activity Recognition WatchKit Extension";
+			productReference = 2D14480E204C364400990E62 /* Human Activity Recognition WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D1447E5204C364100990E62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Ramy Al Zuhouri";
+				TargetAttributes = {
+					2D1447EC204C364100990E62 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					2D1447FE204C364300990E62 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
+					2D14480D204C364400990E62 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2D1447E8204C364100990E62 /* Build configuration list for PBXProject "Human Activity Recognition" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D1447E4204C364100990E62;
+			productRefGroup = 2D1447EE204C364100990E62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D1447EC204C364100990E62 /* Human Activity Recognition */,
+				2D1447FE204C364300990E62 /* Human Activity Recognition WatchKit App */,
+				2D14480D204C364400990E62 /* Human Activity Recognition WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D1447EB204C364100990E62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1447FB204C364300990E62 /* LaunchScreen.storyboard in Resources */,
+				2D1447F8204C364300990E62 /* Assets.xcassets in Resources */,
+				2D7A3656204F007F007C7F91 /* Settings.bundle in Resources */,
+				2D144837204C3C1300990E62 /* Activities.plist in Resources */,
+				2D14489F204C4C2D00990E62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1447FD204C364300990E62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D144808204C364400990E62 /* Assets.xcassets in Resources */,
+				2D144806204C364300990E62 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D14480C204C364400990E62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D14481A204C364500990E62 /* Assets.xcassets in Resources */,
+				2D144858204C3CD200990E62 /* Activities.txt in Resources */,
+				2D144838204C3C1300990E62 /* Activities.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D1447E9204C364100990E62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D14487B204C498600990E62 /* GroupViewController.swift in Sources */,
+				2D144861204C3D0D00990E62 /* FeatureSet+CoreDataProperties.swift in Sources */,
+				2D1447F1204C364100990E62 /* AppDelegate.swift in Sources */,
+				2D144878204C498600990E62 /* TrainingViewController.swift in Sources */,
+				2D14487A204C498600990E62 /* ExportDataViewController.swift in Sources */,
+				2D144844204C3C6500990E62 /* CoreLocationService.swift in Sources */,
+				2D144877204C498600990E62 /* GroupsViewController.swift in Sources */,
+				2D7A3654204EFDBA007C7F91 /* Preferences.swift in Sources */,
+				2D144864204C3D0D00990E62 /* Training+CoreDataClass.swift in Sources */,
+				2D144868204C3D1A00990E62 /* Instances.xcdatamodeld in Sources */,
+				2D144862204C3D0D00990E62 /* FeatureSet+CoreDataClass.swift in Sources */,
+				2D144855204C3CC100990E62 /* Logger.swift in Sources */,
+				2D94A72A20BEE3FE00129BB9 /* SensorsRecorder.swift in Sources */,
+				2D14487C204C498600990E62 /* TrainingsViewController.swift in Sources */,
+				2D144848204C3C6500990E62 /* HealthKitService.swift in Sources */,
+				2D144876204C498600990E62 /* BodyMeasurementsViewController.swift in Sources */,
+				2D14486A204C3D3900990E62 /* TrainingsController.swift in Sources */,
+				2D14484B204C3C7500990E62 /* ICloudHelper.swift in Sources */,
+				2D144846204C3C6500990E62 /* CoreMotionService.swift in Sources */,
+				2D144879204C498600990E62 /* PairingViewController.swift in Sources */,
+				2D144874204C498600990E62 /* SettingsViewController.swift in Sources */,
+				2D144865204C3D0D00990E62 /* Training+CoreDataProperties.swift in Sources */,
+				2D144860204C3D0D00990E62 /* FeatureGroup+CoreDataProperties.swift in Sources */,
+				2D144863204C3D0D00990E62 /* FeatureGroup+CoreDataClass.swift in Sources */,
+				2D144875204C498600990E62 /* InstancesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D14480A204C364400990E62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D14482A204C378000990E62 /* TestingController.swift in Sources */,
+				2D144897204C4BAE00990E62 /* Matrix.swift in Sources */,
+				2D144893204C4BAE00990E62 /* Exponential.swift in Sources */,
+				2D144816204C364400990E62 /* ExtensionDelegate.swift in Sources */,
+				2D14483D204C3C3E00990E62 /* Math.swift in Sources */,
+				2D14489D204C4BAE00990E62 /* Power.swift in Sources */,
+				2D14483B204C3C2800990E62 /* Preferences.swift in Sources */,
+				2DFC1D9720DD1646007AC8CD /* BatteryTest.swift in Sources */,
+				2D14489B204C4BAE00990E62 /* Trigonometric.swift in Sources */,
+				2D144898204C4BAE00990E62 /* Hyperbolic.swift in Sources */,
+				2D144830204C379A00990E62 /* WorkoutInfo.swift in Sources */,
+				2D144814204C364400990E62 /* InterfaceController.swift in Sources */,
+				2D144847204C3C6500990E62 /* CoreMotionService.swift in Sources */,
+				2D144852204C3CAE00990E62 /* HistorySet.swift in Sources */,
+				2D144894204C4BAE00990E62 /* Arithmetic.swift in Sources */,
+				2D14484E204C3C8800990E62 /* MessageQueue.swift in Sources */,
+				2D14489C204C4BAE00990E62 /* Auxiliary.swift in Sources */,
+				2D144895204C4BAE00990E62 /* ContinuousCollection.swift in Sources */,
+				2D144832204C37A600990E62 /* ActivityController.swift in Sources */,
+				2D144849204C3C6500990E62 /* HealthKitService.swift in Sources */,
+				2D14482C204C378D00990E62 /* TrainingController.swift in Sources */,
+				2D144899204C4BAE00990E62 /* Convolution.swift in Sources */,
+				2D144818204C364400990E62 /* ComplicationController.swift in Sources */,
+				2D144834204C37AD00990E62 /* ActivityRowController.swift in Sources */,
+				2D14482E204C379400990E62 /* WorkoutData.swift in Sources */,
+				2D14489A204C4BAE00990E62 /* Pointers.swift in Sources */,
+				2D144856204C3CC100990E62 /* Logger.swift in Sources */,
+				2D14484F204C3C8800990E62 /* Queue.swift in Sources */,
+				2D144896204C4BAE00990E62 /* FFT.swift in Sources */,
+				2D144853204C3CAE00990E62 /* DecisionTree.swift in Sources */,
+				2D144845204C3C6500990E62 /* CoreLocationService.swift in Sources */,
+				2D144840204C3C5100990E62 /* SensorsRecorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D144802204C364300990E62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D1447FE204C364300990E62 /* Human Activity Recognition WatchKit App */;
+			targetProxy = 2D144801204C364300990E62 /* PBXContainerItemProxy */;
+		};
+		2D144811204C364400990E62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D14480D204C364400990E62 /* Human Activity Recognition WatchKit Extension */;
+			targetProxy = 2D144810204C364400990E62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D1447F9204C364300990E62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D1447FA204C364300990E62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D144804204C364300990E62 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D144805204C364300990E62 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D14481C204C364500990E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		2D14481D204C364500990E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		2D14481F204C364500990E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Human Activity Recognition WatchKit Extension/Human Activity Recognition WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Z29Z3ZJEP;
+				INFOPLIST_FILE = "Human Activity Recognition WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ramy.alzuhouri.Human-Activity-Recognition.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		2D144820204C364500990E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Human Activity Recognition WatchKit Extension/Human Activity Recognition WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Z29Z3ZJEP;
+				INFOPLIST_FILE = "Human Activity Recognition WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ramy.alzuhouri.Human-Activity-Recognition.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		2D144823204C364500990E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Z29Z3ZJEP;
+				IBSC_MODULE = Human_Activity_Recognition_WatchKit_Extension;
+				INFOPLIST_FILE = "Human Activity Recognition WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ramy.alzuhouri.Human-Activity-Recognition.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		2D144824204C364500990E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Z29Z3ZJEP;
+				IBSC_MODULE = Human_Activity_Recognition_WatchKit_Extension;
+				INFOPLIST_FILE = "Human Activity Recognition WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ramy.alzuhouri.Human-Activity-Recognition.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		2D144827204C364500990E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Human Activity Recognition/Human Activity Recognition.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Z29Z3ZJEP;
+				INFOPLIST_FILE = "Human Activity Recognition/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ramy.alzuhouri.Human-Activity-Recognition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2D144828204C364500990E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Human Activity Recognition/Human Activity Recognition.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Z29Z3ZJEP;
+				INFOPLIST_FILE = "Human Activity Recognition/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ramy.alzuhouri.Human-Activity-Recognition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D1447E8204C364100990E62 /* Build configuration list for PBXProject "Human Activity Recognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D14481C204C364500990E62 /* Debug */,
+				2D14481D204C364500990E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D14481E204C364500990E62 /* Build configuration list for PBXNativeTarget "Human Activity Recognition WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D14481F204C364500990E62 /* Debug */,
+				2D144820204C364500990E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D144822204C364500990E62 /* Build configuration list for PBXNativeTarget "Human Activity Recognition WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D144823204C364500990E62 /* Debug */,
+				2D144824204C364500990E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D144826204C364500990E62 /* Build configuration list for PBXNativeTarget "Human Activity Recognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D144827204C364500990E62 /* Debug */,
+				2D144828204C364500990E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D144866204C3D1A00990E62 /* Instances.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D144867204C3D1A00990E62 /* Instances.xcdatamodel */,
+			);
+			currentVersion = 2D144867204C3D1A00990E62 /* Instances.xcdatamodel */;
+			path = Instances.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2D1447E5204C364100990E62 /* Project object */;
+}

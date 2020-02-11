@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Human_Activity_Recognition_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Training" id="OhS-CF-5qK">
+                            <color key="backgroundColor" red="1" green="0.792156862745098" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="c9i-X4-tmh" kind="push" identifier="goToTraining" id="J9g-9s-3SW"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Testing" id="PtI-0e-WGw">
+                            <color key="backgroundColor" red="1" green="0.792156862745098" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="OQy-SQ-gj3" kind="push" identifier="goToTesting" id="dJH-aA-jJi"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-218" y="-10"/>
+        </scene>
+        <!--Training-->
+        <scene sceneID="Tx2-JT-n7z">
+            <objects>
+                <controller identifier="TrainingController" title="Training" id="c9i-X4-tmh" customClass="TrainingController" customModule="Human_Activity_Recognition_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="bHg-MJ-5Pk">
+                            <items>
+                                <tableRow identifier="ActivityRowController" id="fGY-g7-SHy" customClass="ActivityRowController" customModule="Human_Activity_Recognition_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="f68-Jn-wSY">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="ENk-Kg-uBO"/>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="0.792156862745098" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="activityLabel" destination="ENk-Kg-uBO" id="ygi-UV-FMz"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="activitiesTable" destination="bHg-MJ-5Pk" id="byj-yf-ct4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="89" y="-10"/>
+        </scene>
+        <!--Activity-->
+        <scene sceneID="bpr-JA-amc">
+            <objects>
+                <controller identifier="ActivityController" title="Activity" id="jlz-gJ-u2D" customClass="ActivityController" customModule="Human_Activity_Recognition_WatchKit_Extension">
+                    <items>
+                        <timer alignment="center" textAlignment="center" id="pgz-dv-FaM">
+                            <calendarUnit key="units" second="YES"/>
+                        </timer>
+                        <separator alignment="left" id="Jqx-hz-da8"/>
+                        <label alignment="center" text="Training  Not Started" textAlignment="center" numberOfLines="2" id="3J5-B7-c4c"/>
+                        <label alignment="center" text="Delivered Instances: 0/0" textAlignment="center" numberOfLines="2" id="PQd-we-Szf"/>
+                        <label alignment="center" hidden="YES" text="You can View the Training Summary and its Data in the iOS HAR App" textAlignment="center" numberOfLines="5" id="Bep-20-xJY"/>
+                        <label alignment="center" text="Accelerometer ❌" id="6dC-EJ-2dK"/>
+                        <label alignment="center" text="Gyroscope ❌" id="RaS-bd-7qW"/>
+                        <label alignment="center" text="GPS ❌" id="3OD-zJ-ohZ"/>
+                        <label alignment="center" text="♥ 80 bpm" id="8aA-eE-F4Y">
+                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <button width="1" alignment="left" hidden="YES" title="Done" id="WOG-Rj-4S8">
+                            <color key="backgroundColor" red="1" green="0.792156862745098" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="done" destination="jlz-gJ-u2D" id="vdK-op-jna"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="GPS_stateLabel" destination="3OD-zJ-ohZ" id="jG5-Xt-MVu"/>
+                        <outlet property="accelerometerStateLabel" destination="6dC-EJ-2dK" id="mI2-up-acg"/>
+                        <outlet property="countdownTimer" destination="pgz-dv-FaM" id="IhD-nW-HLu"/>
+                        <outlet property="doneButton" destination="WOG-Rj-4S8" id="Bs7-pM-hg7"/>
+                        <outlet property="gyroscopeStateLabel" destination="RaS-bd-7qW" id="J8e-0F-8eR"/>
+                        <outlet property="heartRateLabel" destination="8aA-eE-F4Y" id="wF6-Ql-oma"/>
+                        <outlet property="instancesLabel" destination="PQd-we-Szf" id="vXH-0J-7dT"/>
+                        <outlet property="separator" destination="Jqx-hz-da8" id="u4L-3x-k6g"/>
+                        <outlet property="statusLabel" destination="3J5-B7-c4c" id="0bp-8B-eH8"/>
+                        <outlet property="summaryLabel" destination="Bep-20-xJY" id="XGH-vR-dl1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="362" y="17"/>
+        </scene>
+        <!--Testing-->
+        <scene sceneID="VSk-fV-2o1">
+            <objects>
+                <controller identifier="TestingController" title="Testing" id="OQy-SQ-gj3" customClass="TestingController" customModule="Human_Activity_Recognition_WatchKit_Extension">
+                    <items>
+                        <timer alignment="center" textAlignment="center" id="8gj-C0-EuS">
+                            <calendarUnit key="units" second="YES"/>
+                        </timer>
+                        <separator alignment="left" id="vSD-qb-Jzu"/>
+                        <label alignment="center" text="Activity: Unknown" textAlignment="center" id="7m3-Jd-ycF"/>
+                        <label alignment="center" text="Accuracy: N/A" textAlignment="center" id="9WV-Tl-xVj"/>
+                        <label alignment="center" text="History Set Size: 5" textAlignment="center" numberOfLines="2" id="3nt-Dc-e4d"/>
+                        <label alignment="center" text="Active Calories: 0" numberOfLines="2" id="E55-8q-BIF"/>
+                        <timer alignment="center" textAlignment="center" format="short" previewedSeconds="5" id="OOn-m3-iyd">
+                            <color key="textColor" red="1" green="0.792156862745098" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </timer>
+                        <label alignment="center" text="Accelerometer ❌" textAlignment="center" id="iRe-k2-4wr"/>
+                        <label alignment="center" text="Gyroscope ❌" textAlignment="center" id="kCk-K2-npz"/>
+                        <label alignment="center" text="GPS ❌" textAlignment="center" id="Ugo-Hb-hrg"/>
+                        <label alignment="center" text="♥ 80 bpm" textAlignment="center" id="aVH-lj-Es8">
+                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="GPS_Label" destination="Ugo-Hb-hrg" id="aG8-ig-FUk"/>
+                        <outlet property="accelerometerLabel" destination="iRe-k2-4wr" id="ixv-Md-3c6"/>
+                        <outlet property="accuracyLabel" destination="9WV-Tl-xVj" id="vqA-Vz-gKV"/>
+                        <outlet property="activityLabel" destination="7m3-Jd-ycF" id="COt-5N-iFh"/>
+                        <outlet property="caloriesLabel" destination="E55-8q-BIF" id="Lg9-NA-6hP"/>
+                        <outlet property="countdownInterfaceTimer" destination="8gj-C0-EuS" id="Gw0-Zu-FVo"/>
+                        <outlet property="gyroscopeLabel" destination="kCk-K2-npz" id="7dc-qg-KJC"/>
+                        <outlet property="heartRateLabel" destination="aVH-lj-Es8" id="5b6-UE-zsx"/>
+                        <outlet property="historySetSizeLabel" destination="3nt-Dc-e4d" id="ap3-de-gR7"/>
+                        <outlet property="separator" destination="vSD-qb-Jzu" id="WF0-Qa-nVT"/>
+                        <outlet property="timer" destination="OOn-m3-iyd" id="CDe-CV-x4o"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-322" y="484"/>
+        </scene>
+    </scenes>
+</document>
